@@ -1,5 +1,6 @@
 
   
+  
 ### Escuela Colombiana de Ingeniería
 ### Arquitecturas de Software – ARSW
 
@@ -8,7 +9,9 @@
 
 ### Descripción
 Este laboratorio tiene como fin que el estudiante conozca y aplique conceptos propios de la programación concurrente, además de estrategias que eviten condiciones de carrera.
+### Dependencias:
 
+* [Ejercicio Introducción al paralelismo - Hilos - BlackList Search](https://github.com/ARSW-ECI-beta/PARALLELISM-JAVA_THREADS-INTRODUCTION_BLACKLISTSEARCH)
 #### Parte I – Antes de terminar la clase.
 
 Control de hilos con wait/notify. Productor/consumidor.
