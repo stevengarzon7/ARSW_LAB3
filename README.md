@@ -157,7 +157,7 @@ por:
 + [Steven Garzon](https://github.com/stevengarzon7) 
 
 Version: 1.0
-Fecha: 02 de febrero 2021
+Fecha: 26 de febrero 2021
 
 ### Autores
 
