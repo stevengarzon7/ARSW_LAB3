@@ -115,11 +115,30 @@ se cumple como se puede apreciar en la imagen pauseAndCheckTest.
 	}
 	```
 
+![Estrategia](https://github.com/stevengarzon7/ARSW_Lab3/blob/master/img/imagen14.png?raw=true)
+
+La estrategia se llevó a cabo en el metodo "figt()" de la clase "Inmortal".
+
 7. Tras implementar su estrategia, ponga a correr su programa, y ponga atención a si éste se llega a detener. Si es así, use los programas jps y jstack para identificar por qué el programa se detuvo.
+
+Al usar JPS y JSTACK se pudo ver lo que estaba pasando, el programa se encontraba en un deadlock, lo que quiere  
+decir que por alguna razón se quedaron esperandose mutuamente los hilos (Immortal)
 
 8. Plantee una estrategia para corregir el problema antes identificado (puede revisar de nuevo las páginas 206 y 207 de _Java Concurrency in Practice_).
 
 9. Una vez corregido el problema, rectifique que el programa siga funcionando de manera consistente cuando se ejecutan 100, 1000 o 10000 inmortales. Si en estos casos grandes se empieza a incumplir de nuevo el invariante, debe analizar lo realizado en el paso 4.
+
+![Estrategia](https://github.com/stevengarzon7/ARSW_Lab3/blob/master/img/imagen15.png?raw=true)
+
+Con 100
+
+![Estrategia](https://github.com/stevengarzon7/ARSW_Lab3/blob/master/img/imagen16.png?raw=true)
+
+Con 1000
+
+![Estrategia](https://github.com/stevengarzon7/ARSW_Lab3/blob/master/img/imagen17.png?raw=true)
+
+Con 1000
 
 10. Un elemento molesto para la simulación es que en cierto punto de la misma hay pocos 'inmortales' vivos realizando peleas fallidas con 'inmortales' ya muertos. Es necesario ir suprimiendo los inmortales muertos de la simulación a medida que van muriendo. Para esto:
 	* Analizando el esquema de funcionamiento de la simulación, esto podría crear una condición de carrera? Implemente la funcionalidad, ejecute la simulación y observe qué problema se presenta cuando hay muchos 'inmortales' en la misma. Escriba sus conclusiones al respecto en el archivo RESPUESTAS.txt.
