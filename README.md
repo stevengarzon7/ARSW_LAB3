@@ -161,8 +161,8 @@ Fecha: 26 de febrero 2021
 
 ### Autores
 
-* **Santiago Buitrago** - *Laboratorio N°2* - [DonSantiagoS](https://github.com/DonSantiagoS)
-* **Steven Garzon** - *Laboratorio N°2* - [stevengarzon7](https://github.com/stevengarzon7)
+* **Santiago Buitrago** - *Laboratorio N°3* - [DonSantiagoS](https://github.com/DonSantiagoS)
+* **Steven Garzon** - *Laboratorio N°3* - [stevengarzon7](https://github.com/stevengarzon7)
 
 
 
