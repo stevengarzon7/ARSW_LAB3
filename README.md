@@ -21,9 +21,11 @@ El consumo de cpu es alto,  se debe por que la clase consumidor
 no tiene ninguna instrucción de espera a la clase productor en consumir,
 es decir que una vez el productor agrega algo a la lista, el
 consumidor antes de que el productor pueda agregar algo más ya lo habrá consumido.
+
 ![consumoAlto](https://github.com/stevengarzon7/ARSW_Lab3/blob/master/img/imagen1.png?raw=true)
 # 2. Haga los ajustes necesarios para que la solución use más eficientemente la CPU, teniendo en cuenta que -por ahora- la producción es lenta y el consumo es rápido. Verifique con JVisualVM que el consumo de CPU se reduzca.
 Se añadió un Thread sleep tal cual como esta en producer a consumer, bajando considerablemente la carga de CPU
+
 ![consumoBajo](https://github.com/stevengarzon7/ARSW_Lab3/blob/master/img/imagen2.png?raw=true)
 ![consumoBajo](https://github.com/stevengarzon7/ARSW_Lab3/blob/master/img/imagen3.png?raw=true)
 ![consumoBajo](https://github.com/stevengarzon7/ARSW_Lab3/blob/master/img/imagen4.png?raw=true)
