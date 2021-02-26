@@ -23,15 +23,30 @@ es decir que una vez el productor agrega algo a la lista, el
 consumidor antes de que el productor pueda agregar algo más ya lo habrá consumido.
 
 ![consumoAlto](https://github.com/stevengarzon7/ARSW_Lab3/blob/master/img/imagen1.png?raw=true)
+
 ##### 2. Haga los ajustes necesarios para que la solución use más eficientemente la CPU, teniendo en cuenta que -por ahora- la producción es lenta y el consumo es rápido. Verifique con JVisualVM que el consumo de CPU se reduzca.
 Se añadió un Thread sleep tal cual como esta en producer a consumer, bajando considerablemente la carga de CPU
 
 ![consumoBajo](https://github.com/stevengarzon7/ARSW_Lab3/blob/master/img/imagen2.png?raw=true)
 ![consumoBajo](https://github.com/stevengarzon7/ARSW_Lab3/blob/master/img/imagen3.png?raw=true)
 ![consumoBajo](https://github.com/stevengarzon7/ARSW_Lab3/blob/master/img/imagen4.png?raw=true)
-3. Haga que ahora el productor produzca muy rápido, y el consumidor consuma lento. Teniendo en cuenta que el productor conoce un límite de Stock (cuantos elementos debería tener, a lo sumo en la cola), haga que dicho límite se respete. Revise el API de la colección usada como cola para ver cómo garantizar que dicho límite no se supere. Verifique que, al poner un límite pequeño para el 'stock', no haya consumo alto de CPU ni errores.
 
+##### 3. Haga que ahora el productor produzca muy rápido, y el consumidor consuma lento. Teniendo en cuenta que el productor conoce un límite de Stock (cuantos elementos debería tener, a lo sumo en la cola), haga que dicho límite se respete. Revise el API de la colección usada como cola para ver cómo garantizar que dicho límite no se supere. Verifique que, al poner un límite pequeño para el 'stock', no haya consumo alto de CPU ni errores.
 
+El productor produce mas rapido de lo que el consumidor consume
+
+![consumoMinimo](https://github.com/stevengarzon7/ARSW_Lab3/blob/master/img/imagen5.png?raw=true)
+
+La diferencia entre el primer punto y este es considerable  
+en cuanto al uso del CPU durante la ejecución del programa
+a continuación se ve el consumo del CPU y la propuesta  
+para llegar a hacer mejor uso del CPU en este programa:
+
+![consumoBajo](https://github.com/stevengarzon7/ARSW_Lab3/blob/master/img/imagen6.png?raw=true)
+![consumoBajo](https://github.com/stevengarzon7/ARSW_Lab3/blob/master/img/imagen7.png?raw=true)
+![consumoBajo](https://github.com/stevengarzon7/ARSW_Lab3/blob/master/img/imagen8.png?raw=true)
+
+ 
 #### Parte II. – Antes de terminar la clase.
 
 Teniendo en cuenta los conceptos vistos de condición de carrera y sincronización, haga una nueva versión -más eficiente- del ejercicio anterior (el buscador de listas negras). En la versión actual, cada hilo se encarga de revisar el host en la totalidad del subconjunto de servidores que le corresponde, de manera que en conjunto se están explorando la totalidad de servidores. Teniendo esto en cuenta, haga que:
