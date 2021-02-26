@@ -50,7 +50,7 @@ public class ControlFrame extends JFrame {
                 }
             }
         });
-    }
+      }
 
     /**
      * Create the frame.

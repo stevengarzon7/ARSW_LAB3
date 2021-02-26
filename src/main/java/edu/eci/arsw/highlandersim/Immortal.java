@@ -43,7 +43,7 @@ public class Immortal extends Thread {
                         ex.printStackTrace();    
                     }
                 }
-            }   
+         }   
 
             Immortal im;
             synchronized (immortalsPopulation) {

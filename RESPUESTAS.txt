@@ -1,0 +1,5 @@
+Conclusiones: 
+La problamtica con esta implementación es que los hilos ingresas ordenadamente por la sincronización 
+en bloque puesto en el método donde se rectificara si el inmortal tiene suficiente vida para continuar 
+combatiendo o no, si podria generar un condicional de carrera ya que puede ingresar mas de un hilo a editar la lista al eliminar los inmortales muertos.
+Al correr la simulación con muchos inmortales se presenta un error con el manejo de LinkedList, esto se puede resolver  con un synchronized.
