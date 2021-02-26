@@ -54,6 +54,16 @@ Teniendo en cuenta los conceptos vistos de condición de carrera y sincronizaci�
 - La búsqueda distribuida se detenga (deje de buscar en las listas negras restantes) y retorne la respuesta apenas, en su conjunto, los hilos hayan detectado el número de ocurrencias requerido que determina si un host es confiable o no (_BLACK_LIST_ALARM_COUNT_).
 - Lo anterior, garantizando que no se den condiciones de carrera.
 
+Se creo la clase blackListControlador con el objetivo de controlar el atributo ocurrencesCount de tal manera 
+que cuando fuera mayor a 5 es decir que la ip se encontrara en 5 de las listas, cada uno de los threads retornara las ocurrencias sin necesidad de 
+terminar de recorrer todo el subconjunto
+
+![Arreglo](https://github.com/stevengarzon7/ARSW_Lab3/blob/master/img/imagen9.png?raw=true)
+
+
+
+
+
 #### Parte II. – Avance para la siguiente clase
 
 Sincronización y Dead-Locks.
